@@ -31,8 +31,8 @@ export class LoginPageComponent implements OnInit {
  /* Creación de un grupo de formularios con dos controles, correo electrónico y contraseña. */
     this.registerRoute = ['/auth','register'];
     this.loginForm = new FormGroup({
-      email: new FormControl('admin@bingo.sofka.co', [Validators.required, Validators.email]),
-      password: new FormControl('admin1234', [
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [
         Validators.required,
         Validators.minLength(6),
         Validators.maxLength(12),
