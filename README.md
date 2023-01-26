@@ -80,14 +80,13 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 ### Node.js
 #### Instala las dependencias
 - Abre una ventana de comandos en el directorio de Node.js anteriormente guardado y ejecuta el comando *npm install*
-
 [![npm-install.jpg](https://i.postimg.cc/0yFJ8rs2/npm-install.jpg)](https://postimg.cc/68VQcWqD)
 #### Configura el archivo .ENV
 - Dentro del directorio del servidor crea un nuevo archivo **.ENV** y agrega las siguientes variables de entorno
-- PORT=9091
-- secret=kj$as/LQ!
-- token_expiration= 3h
-- db_host=mongodb://127.0.0.1:27017/bingo 
+-- PORT=9091
+-- secret=kj$as/LQ!
+-- token_expiration= 3h
+-- db_host=mongodb://127.0.0.1:27017/bingo 
 
 [![bingo-mongo-config.jpg](https://i.postimg.cc/XvWxV23v/bingo-mongo-config.jpg)](https://postimg.cc/ZWf6HxWk)
 
@@ -104,6 +103,10 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 - Abre la siguiente URL en tu navegador web **http://localhost:4200**
 
 [![bingo-ng-serve.jpg](https://i.postimg.cc/CLLN5vRP/bingo-ng-serve.jpg)](https://postimg.cc/9zKTNYtZ)
+
+#### Visualiza la ventana de login
+
+[![bingo-login.jpg](https://i.postimg.cc/xdfZCbCS/bingo-login.jpg)](https://postimg.cc/HrNzvnXS)
 
 ## Despliegue 📦
 
