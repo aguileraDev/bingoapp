@@ -104,6 +104,10 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 
 [![bingo-ng-serve.jpg](https://i.postimg.cc/CLLN5vRP/bingo-ng-serve.jpg)](https://postimg.cc/9zKTNYtZ)
 
+#### Visualiza la ventana de login
+
+[![bingo-login.jpg](https://i.postimg.cc/xdfZCbCS/bingo-login.jpg)](https://postimg.cc/HrNzvnXS)
+
 ## Despliegue 📦
 
 _Agrega notas adicionales sobre como hacer deploy_
