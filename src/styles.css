@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --dark-1: #141414;
+  --dark-2: #303030;
+  --light: #ffffff;
+  --light-1: #f8f8f8;
+  --light-2: #e7e7e7;
+  --light-3: #c9c9c9;
+  --orange-1: #ff8800;
+  --orange-1-hover: #db7806;
+  --blue-1: #2777c2;
+  --blue-2: #2267A8;
+  --blue-3: #1A2F91;
+  --turquoise-1: #1DDEAE;
+  --font-1: #fafafa;
+  --font-dark-1: #000000;
+  --font-dark-2: #363636;
+  --font-size-1: 1rem;
+  --font-size-2: 1.75rem;
+  --font-size-subtitle: 2rem;
+  --shadow-1: rgb(0 0 0 / 35%) 0px 8px 24px;
+  --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --border-radius-1: .25rem;
+  --border-radius-2: .5rem;
+  --pad-1: 1rem;
+  --pad-2: 2rem;
+}
+
+/* Scrollbar personalizado */
+
+::-webkit-scrollbar{
+  width: 7px;
+  border-radius: 3.5px;
+  background-color: var(--light-3);
+  -webkit-border-radius: 3.5px;
+  -moz-border-radius: 3.5px;
+  -ms-border-radius: 3.5px;
+  -o-border-radius: 3.5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 3.5px;
+  -webkit-border-radius: 3.5px;
+  -moz-border-radius: 3.5px;
+  -ms-border-radius: 3.5px;
+  -o-border-radius: 3.5px;
+  background-color: var(--dark-2);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--light);
+  color: var(--font-dark-2);
+  overflow: hidden;
+}
+
+
+.sub-wrapper{
+  overflow: hidden;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
+}
+
+.bg-orange {
+  background-color: var(--orange-1);
+}
+.bg-blue{
+  background-color: var(--blue-1);
+}
+.text-orange {
+  color: var(--orange-1);
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  color: var(--dark-2);
+  opacity: .5;
+}
+
+@media screen and (min-width: 996px) {
+
+  .sub-wrapper{
+    padding: 1rem 3rem;
+  }
+}

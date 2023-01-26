@@ -1,0 +1,21 @@
+<div #sidebar class="sidebar">
+  <div class="sidebar-menu-icon">
+    <a (click)="toogleBar()" type="button">
+      <i *ngIf="!desktop" class="uil uil-bars"></i>
+      <h1 [routerLink]="home" class="sidebar-title">BingoApp</h1>
+    </a>
+  </div>
+  <div class="username">
+     <h6><i class="uil - uil-user"></i>{{player}}</h6>
+  </div>
+  <nav class="sidebar-content">
+    <ul>
+      <li *ngFor="let item of links" [routerLink]="item.router">
+        <a><i [ngClass]="['uil',item.icon]"></i>{{item.name}}</a>
+      </li>
+    </ul>
+
+    <app-users-bar></app-users-bar>
+    <a class="exit" (click)="exitApp()"><i class="uil - uil-signout"></i>Salir</a>
+  </nav>
+</div>

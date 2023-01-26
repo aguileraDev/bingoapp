@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <em>Online</em>
+  <ul>
+    <li *ngFor="let item of users">
+      <p>{{item.name}}<i [ngClass]="{'uil uil-award':item.won,'uil uil-sad-crying':item.loser}"></i></p>
+    </li>
+  </ul>
+</div>

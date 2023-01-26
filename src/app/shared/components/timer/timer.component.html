@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col">
+      <div class="horn mt-3 mb-3">
+        <h3 *ngIf="value!=0">{{letter}}-{{value}}</h3>
+      </div>
+    </div>
+  </div>
+  <h6 class="text-center mb-3 text-white">Ultimos resultados</h6>
+  <div class ="list">
+   <ul *ngFor="let item of lastResults">
+      <li>{{item}}</li>
+   </ul>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="sub-wrapper">
+  <h2 class="text-center mb-3">Bienvenido</h2>
+  <p>Bingo es un juego mundial, muy común en fiestas tradicionales, iglesias y casinos. Es muy popular como diversión
+    para ser jugado entre familiares y amigos.</p>
+  <h4>¿Primera vez que juegas al bingo?</h4>
+  <p>No te preocupes te dejamos algunas instrucciones sobre de que trata el juego</p>
+
+  <!-- Button trigger modal -->
+  <div class="row">
+    <div class="col-12 col-lg-6 text-center text-lg-start">
+        <button type="button" class="btn btn-blue mb-3" data-bs-toggle="modal" data-bs-target="#guideModal">
+          Ver Instrucciones
+        </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade mb-3" id="guideModal" tabindex="-1" role="dialog" aria-labelledby="guideModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="guideModalLabel">Como Jugar</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <p>
+            El objetivo del juego es marcar los números del cartón conforme vayan apareciendo las fichas y lograr ser el
+            primero en completar una linea horizontal, vertical, 4 esquinas, diagonal o todo el cartón. Cada juego posee
+            lo siguiente:
+          </p>
+          <ul>
+            <li><b>Fichas:</b> 75</li>
+            <li><b>Cartón:</b> Los jugadores reciben un carton unico de 25 espacios generados de forma aleatoria para
+              utilizar en el juego.
+            </li>
+          </ul>
+          <figure>
+            <img class="img-fluid" src={{waysToWin}} alt="" srcset="">
+          </figure>
+          <ul>
+            <li>
+              En cada ronda, un número diferente se sortea. Si el número aparece en el carton debe marcarlo pulsando
+              sobre el mismo.
+            </li>
+            <li>
+              Al completar una línea, columna, diagonal o cualquiera de los patrones, el jugador debe avisar pulsando el
+              botón de <b>"Bingo"</b>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-count-down *ngIf="showCountDown" (finishCount$)="getCountDownEvent($event)"></app-count-down>
+
+  <div class="text-center mb-4">
+    <button [disabled]="buttonDisabled" (click)="startGame()" type="button" class="btn btn-orange">Jugar</button>
+  </div>
+
+  <figure class="text-center text-lg-end">
+    <img src="assets/images/bingo-banner.png" class="img-fluid" alt="bingo-banner" srcset="">
+  </figure>
+</div>

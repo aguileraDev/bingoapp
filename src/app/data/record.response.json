@@ -1,0 +1,106 @@
+{
+  "error": false,
+  "message": "",
+  "data": [
+      {
+          "tokenId": 1,
+          "value": 1
+      },
+      {
+          "tokenId": 2,
+          "value": 19
+      },
+      {
+          "tokenId": 3,
+          "value": 32
+      },
+      {
+          "tokenId": 4,
+          "value": 48
+      },
+      {
+          "tokenId": 5,
+          "value": 66
+      },
+      {
+          "tokenId": 6,
+          "value": 5
+      },
+      {
+          "tokenId": 7,
+          "value": 25
+      },
+      {
+          "tokenId": 8,
+          "value": 37
+      },
+      {
+          "tokenId": 9,
+          "value": 49
+      },
+      {
+          "tokenId": 10,
+          "value": 68
+      },
+      {
+          "tokenId": 11,
+          "value": 9
+      },
+      {
+          "tokenId": 12,
+          "value": 26
+      },
+      {
+          "tokenId": 13,
+          "value": 38
+      },
+      {
+          "tokenId": 14,
+          "value": 50
+      },
+      {
+          "tokenId": 15,
+          "value": 69
+      },
+      {
+          "tokenId": 16,
+          "value": 11
+      },
+      {
+          "tokenId": 17,
+          "value": 28
+      },
+      {
+          "tokenId": 18,
+          "value": 43
+      },
+      {
+          "tokenId": 19,
+          "value": 55
+      },
+      {
+          "tokenId": 20,
+          "value": 72
+      },
+      {
+          "tokenId": 21,
+          "value": 15
+      },
+      {
+          "tokenId": 22,
+          "value": 29
+      },
+      {
+          "tokenId": 23,
+          "value": 45
+      },
+      {
+          "tokenId": 24,
+          "value": 46
+      },
+      {
+          "tokenId": 25,
+          "value": 62
+      }
+  ]
+}

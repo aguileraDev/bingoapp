@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="col-12 col-lg-4 mx-auto">
+    <h6 class="text-center">Juego en progreso, por favor espere que el contador o el juego finalice...</h6>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-2 minutes">
+      <div>{{minutes}}</div>
+    </div>
+    <div class="col-2 seconds">
+      <div><span *ngIf="seconds < 10">0</span>{{seconds}}</div>
+    </div>
+  </div>
+</div>

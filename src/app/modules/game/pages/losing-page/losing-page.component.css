@@ -1,0 +1,9 @@
+.subtitle{
+    border-radius: var(--border-radius-2);
+   -webkit-border-radius: var(--border-radius-2);
+   -moz-border-radius: var(--border-radius-2);
+   -ms-border-radius: var(--border-radius-2);
+   -o-border-radius: var(--border-radius-2);
+   text-align: center;
+   color: var(--light-1);
+ }

@@ -1,0 +1,43 @@
+<section>
+  <div class="title">
+    <div class="row">
+      <div class="col-8 col-lg-10">
+        <h2>Registro</h2>
+      </div>
+      <div class="col-4 col-lg-2">
+        <a #home ><i class="uil uil-home fs-4 me-1">
+          </i>Iniciar sesión</a>
+      </div>
+    </div>
+  </div>
+  <div class="separator"></div>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-8 mx-auto">
+        <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+          <div class="mb-1">
+            <input type="text" formControlName="name" placeholder="Nombre">
+          </div>
+          <div class="mb-1">
+            <input type="text" formControlName="lastname" placeholder="Apellido">
+          </div>
+          <div class="mb-1">
+            <input type="text" formControlName="email" placeholder="Correo Electronico">
+          </div>
+          <div class="mb-1">
+            <input type="password" formControlName="password" placeholder="Contraseña">
+          </div>
+          <div class="mb-1">
+            <input type="password" formControlName="confirmPassword" placeholder="Confirmar Contraseña">
+          </div>
+          <div class="mb-1">
+            <h6 *ngIf="registerError">Las contraseñas no coinciden</h6>
+          </div>
+          <div class="mb-1">
+            <button [disabled]="registerForm.invalid" type="submit" class="bg-orange">Registrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

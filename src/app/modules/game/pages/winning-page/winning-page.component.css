@@ -1,0 +1,42 @@
+.container-fluid{
+  background-image: url('src/assets/images/confetti.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-container{
+  width: 100%;
+  max-height: 50%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.subtitle{
+   border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+  text-align: center;
+}
+
+.bg-orange{
+  padding: var(--pad-1);
+  animation-duration: 2s;
+  animation-name: infinite-orange;
+  animation-iteration-count: infinite;
+}
+
+@keyframes infinite-orange{
+
+  from{
+    background-color: var(--orange-1);
+    color: var(--dark-1);
+
+  }
+
+  to{
+    background-color: var(--orange-1-hover);
+    color: var(--light-1);
+
+  }
+}

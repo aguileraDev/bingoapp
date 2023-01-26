@@ -1,0 +1,16 @@
+{
+  "error": false,
+  "message": "",
+  "data": [
+      {
+          "resultID": 1,
+          "value": 2,
+          "resultDate": "2023-01-06T00:20:00Z"
+      },
+      {
+          "resultID": 2,
+          "value": 55,
+          "resultDate": "2023-01-06T00:22:59Z"
+      }
+  ]
+}

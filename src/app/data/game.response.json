@@ -1,0 +1,13 @@
+{
+  "error": false,
+  "message": "",
+  "data": {
+      "gameId": 1,
+      "playerId": "63a8eb1fbd3258c58f326f2d",
+      "active": true,
+      "finished": false,
+      "gameDate": "2023-01-07T11:21:58.648412400Z",
+      "records": null,
+      "results": null
+  }
+}

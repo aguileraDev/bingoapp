@@ -1,0 +1,130 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 100%;
+  z-index: 5;
+  font-family: var(--font-family);
+  background-color: var(--light-2);
+  color: var(--font-dark-1);
+  transition: .5s linear;
+  -moz-transition: .5s linear;
+  -ms-transition: .5s linear;
+  -o-transition: .5s linear;
+  -webkit-transition: .5s linear;
+  list-style: none;
+  overflow: hidden;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  -moz-border-radius-bottomright: 50px;
+}
+
+i {
+  font-size: var(--font-size-2);
+  margin: 0 2rem 0 0;
+  cursor: pointer;
+}
+
+#sidebar-icon:hover {
+  color: var(--orange-1);
+}
+
+.sidebar-title {
+  font-size: var(--font-size-2);
+  display: inline-flex;
+  color: var(--orange-1);
+
+}
+.sidebar .username{
+  width: 250px;
+  flex-flow: row nowrap;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--font-dark-1);
+  margin: .75rem 0;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-menu-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 250px;
+  padding: var(--pad-1);
+  font-size: var(--font-size-subtitle);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sidebar-content ul {
+  display: flex;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.sidebar-content ul li {
+  width: 75%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: var(--font-size-1);
+  margin-bottom: 0.5rem;
+  /* border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px; */
+}
+
+.sidebar-content ul li a {
+  text-decoration: none;
+  color: var(--font-dark-1);
+}
+
+.sidebar-content ul li:hover {
+  border-left: 0.5rem solid var(--orange-1);
+}
+
+.open {
+  width: 250px;
+}
+
+.exit{
+  color: var(--blue-1);
+  padding: var(--pad-1);
+  font-weight: 600;
+}
+
+.exit:hover{
+  color: var(--orange-1-hover);
+}
+@media only screen and (min-width: 996px) {
+
+  .sidebar {
+    width: 250px;
+  }
+  .sidebar .username{
+
+  }
+  .open {
+    width: 250px;
+  }
+
+  .exit{
+    text-align: center;
+  }
+}
