@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RecordsModel } from '@core/models/records.model';
 import { ApiService } from '@shared/services/api.service';
@@ -13,7 +13,7 @@ import { Subject } from 'rxjs';
   styleUrls: ['./board.component.css']
 })
 
-export class BoardComponent implements OnInit {
+export class BoardComponent implements OnInit, AfterViewInit {
 
   paramsRoute: number = 0;
   resultValue: Subject<number> = new Subject();
@@ -64,7 +64,11 @@ export class BoardComponent implements OnInit {
         this.data = response;
       }
     })
+  }
 
+  /* Luego que el componente es cargado se elimina la cookie para evitar la manipulacion de rutas por parte del usuario, evitando que pueda interrumpir en otros juegos que no sea el suyo */
+  ngAfterViewInit(): void {
+    this.cookie.delete('gaming');
   }
 
  /**

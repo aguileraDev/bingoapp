@@ -183,10 +183,8 @@ export class CardBoardComponent implements OnInit {
 
     const winner = this.waysToWin.some(element => element === true);
 
-    console.log(`valor de winner ${winner}`);
     if (winner) {
       this.winnerStatus = true;
-      console.log('hay un ganador');
     }
 
   }
@@ -285,10 +283,6 @@ export class CardBoardComponent implements OnInit {
 
   }
 
-  test(): void {
-    this.results.push(1, 15, 66, 62);
-
-  }
 
   /**
    * "Dada una lista, una posición inicial y un paso, devuelva una nueva

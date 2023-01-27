@@ -82,6 +82,7 @@ export class LobbyPageComponent implements OnInit {
   cardboard(game: number):void {
     this.apiService.generateCardboard$(game).subscribe({
       next: (response:any) => {
+        this.cookie.set('gaming','on');
         this.router.navigate([`game/${this.game}`])
       },
       error: err =>{

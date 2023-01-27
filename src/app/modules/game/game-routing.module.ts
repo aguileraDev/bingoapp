@@ -4,6 +4,7 @@ import { GamePageComponent } from './pages/game-page/game-page.component';
 import { LosingPageComponent } from './pages/losing-page/losing-page.component';
 import { WinningPageComponent } from './pages/winning-page/winning-page.component';
 import { ExitGuard } from '@shared/guards/exit.guard';
+import { GameBoardGuard } from '@core/guards/game-board.guard';
 
 
 /* Estas son las rutas para el modulo de juego. */
@@ -11,6 +12,7 @@ const routes: Routes = [
   {
     path:':id',
     component:GamePageComponent,
+    canActivate: [GameBoardGuard],
     canDeactivate: [ExitGuard]
   },
 
