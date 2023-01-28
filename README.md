@@ -144,7 +144,7 @@ https://youtu.be/f1lyFf7qK-U
     - MySQL 8 (Logica del negocio)
     - MongoDB (Control de usuarios)
 - Control de versiones: Git
-- Servicio de alojamiento: GitHub
+- Servicio de alojamiento: Firebase, Render, Railway.app
 - Herramienta de desarrollo: 
      + Visual Studio Code
      + Intellij Idea Community Edition
