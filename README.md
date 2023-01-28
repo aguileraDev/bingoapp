@@ -10,7 +10,9 @@ BingoApp es un proyecto que simula el juego tradicional de bingo. Los jugadores 
 - [Requerimientos](#requerimientos-)
 - [Despliegue](#despliegue-)
 - [Desarrollo](#desarrollo-)
+- [Demo](#demo-)
 - [Agradecimientos](#agradecimientos-)
+
 
 ## Como Jugar
 El juego consiste en que cada jugador obtiene un carton de 25 espacios generado de forma aleatoria con números del 1 al 75 en cada ronda se realiza un sorteo si la ficha resultante se encuentra en tu carton debes marcarlo. 
@@ -65,10 +67,10 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 - **server.port = 9090**
 
 - spring.datasource.url = **jdbc:mysql://localhost:3306/bingo?useSSL=false&serverTimezone=UTC-5&allowPublicKeyRetrival=true**
-- spring.datasource.username = **<nombre de usuario>**
-- spring.datasource.password = **<contraseña>**
+- spring.datasource.username = **nombre de usuario**
+- spring.datasource.password = **contraseña**
 
-- Reemplaza el **username** y **password** por las de tu entorno local de MySQL
+- Reemplaza el **nombre de usuario** y **contraseña** por las de tu entorno local de MySQL
 
 ### Ejecuta el servidor
 [![spring.jpg](https://i.postimg.cc/3NLmHB1d/spring.jpg)](https://postimg.cc/RJHN7wjB)
@@ -83,10 +85,10 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 [![npm-install.jpg](https://i.postimg.cc/0yFJ8rs2/npm-install.jpg)](https://postimg.cc/68VQcWqD)
 #### Configura el archivo .ENV
 - Dentro del directorio del servidor crea un nuevo archivo **.ENV** y agrega las siguientes variables de entorno
--- PORT=9091
--- secret=kj$as/LQ!
--- token_expiration= 3h
--- db_host=mongodb://127.0.0.1:27017/bingo 
+- PORT=9091
+- secret=kj$as/LQ!
+- token_expiration= 3h
+- db_host=mongodb://127.0.0.1:27017/bingo 
 
 [![bingo-mongo-config.jpg](https://i.postimg.cc/XvWxV23v/bingo-mongo-config.jpg)](https://postimg.cc/ZWf6HxWk)
 
@@ -109,8 +111,18 @@ Ahora es momento de configurar los servicios de backend, para Java abre la carpe
 [![bingo-login.jpg](https://i.postimg.cc/xdfZCbCS/bingo-login.jpg)](https://postimg.cc/HrNzvnXS)
 
 ## Despliegue 📦
+### Enlace
 
-_Agrega notas adicionales sobre como hacer deploy_
+https://bingoapp-hosting.web.app/
+
+### Front-end
+Para el despliegue del front-end he utilizado [Firebase](https://firebase.google.com/?hl=es)
+### Back-end
+-  Para los servicios de back-end  he desplegado usando los servicios de [Render](https://render.com/) para la Api con Spring Boot he implementado un contenedor de Docker.
+
+## Demo
+
+https://youtu.be/f1lyFf7qK-U
 
 ## Desarrollo 🛠️
 
@@ -118,8 +130,8 @@ _Agrega notas adicionales sobre como hacer deploy_
 - Front-end:
    - Angular 15
 - Back-end: 
-   - Spring Boot 3
-   - Node.js 
+   - Spring Boot 3 + Docker
+   - Node.js
 - Librerías: 
     - RxJs
     - Bootstrap 5
